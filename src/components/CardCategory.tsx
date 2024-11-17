@@ -18,11 +18,20 @@ type Props = {
 
 const CardCategory: React.FC<Props> = ({ category }) => {
   return (
-    <Card mt={10} mb={10}>
-      <CardHeader>{category.name}</CardHeader>
+    <Card mt={10} mb={10} key={category.id} variant={"filled"}>
+      <CardHeader fontWeight={"bold"} fontSize={"1.5em"}>
+        {category.name}
+      </CardHeader>
       <CardBody>
-        <Image src={category.image} height={250} width={300} />
-        <Text>{category.description}</Text>
+        <Image
+          src={category.image}
+          height={250}
+          width={300}
+          borderRadius={10}
+        />
+        <Box p={5}>
+          <Text>{category.description}</Text>
+        </Box>
       </CardBody>
       <CardFooter
         display={"flex"}

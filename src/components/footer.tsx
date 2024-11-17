@@ -1,8 +1,9 @@
 import { Box, Text } from "@chakra-ui/react";
+import { COLORS } from "../const/colors";
 
 const Footer = () => {
   return (
-    <Box p={5}>
+    <Box p={5} bg={COLORS.BLACK} color={"#fff"}>
       <Text textAlign={"center"}>
         © 2024 Estética y estilo Adri. Todos los derechos reservados.
         <br />

@@ -1,0 +1,7 @@
+export const COLORS = {
+  BLACK: "#1A1A1D",
+  PURPLE: "#3B1C32",
+  PURPLECLEAR: "#6A1E55",
+  PINK: "#A64D79",
+  WHITE: "#FFFFFF",
+};
