@@ -1,14 +1,14 @@
-import { Box, Heading } from "@chakra-ui/react";
+import { Box, Heading, HStack } from "@chakra-ui/react";
 import { Category } from "../data/dataCategory";
 import CardCategory from "./CardCategory";
 
 const Categories = () => {
   return (
-    <Box>
+    <HStack spacing={5} justifyContent={"center"} flexWrap={"wrap"}>
       {Category.map((cat) => {
         return <CardCategory category={cat} />;
       })}
-    </Box>
+    </HStack>
   );
 };
 
